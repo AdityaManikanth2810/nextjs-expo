@@ -1,14 +1,26 @@
 // @generated: @expo/next-adapter@2.1.63
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import Home from './home';
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
+import theme from '../theme';
+import { EvaIconsPack } from '@ui-kitten/eva-icons';
 
 export default function App() {
 	return (
-		<View style={styles.container}>
-			<Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
-			<StatusBar style='auto' />
-		</View>
+		<>
+			<IconRegistry icons={EvaIconsPack} />
+			<ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
+				<Home />
+				<StatusBar style='auto' />
+			</ApplicationProvider>
+		</>
+		// <View style={styles.container}>
+		// 	<Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
+		// 	<StatusBar style='auto' />
+		// </View>
 	);
 }
 
