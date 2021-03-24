@@ -1,0 +1,6 @@
+https://github.com/EvanBacon/Portfolio
+https://github.com/Ectsang/sample-expo-next-app
+https://github.com/nandorojo/expo-next-react-navigation
+https://docs.expo.io/guides/routing-and-navigation/
+https://docs.expo.io/guides/using-nextjs/
+https://github.com/ManAnRuck/React-Native-Web-TypeScript-Prettier-Boilerplate
